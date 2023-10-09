@@ -265,8 +265,8 @@ def data_preprocessing(data, data_test):
 
 
 column_names = ["age", "workclass", "fnlwgt", "education", "education-num", "marital-status", "occupation", "relationship", "race", "sex", "capital-gain", "capital-loss", "hours-per-week", "native-country", "income"]  # Define column names based on the dataset description
-data_train = pd.read_csv("/Users/shuangshuanglin/Downloads/NTU/IN6227/assignment1/Census Income Data Set/adult.data", names=column_names, sep=',\s*', engine='python')
-data_test = pd.read_csv("/Users/shuangshuanglin/Downloads/NTU/IN6227/assignment1/Census Income Data Set/adult.test", names=column_names, sep=',\s*', engine='python')
+data_train = pd.read_csv("Census Income Data Set/adult.data", names=column_names, sep=',\s*', engine='python')
+data_test = pd.read_csv("Census Income Data Set/adult.test", names=column_names, sep=',\s*', engine='python')
 X, y, X_test, y_test = data_preprocessing(data_train, data_test)
 
 start_time = time.time()
